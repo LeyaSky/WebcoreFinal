@@ -1,0 +1,136 @@
+
+.aside{
+    min-width:300px;
+    height: 100%;
+    width: 300px;
+    flex-wrap: nowrap;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    &__container {
+
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #FFF;;
+        height: 1024px;
+    }
+    &__main{
+        display: flex;
+        flex-direction: column;
+    }
+    &__header {
+    }
+    &__services {
+    }
+    &__menu-list {
+        margin: 0px 0px 0px 24px;
+        & li:not(:last-child){
+            margin: 0px 0px 32px 0px;
+        }
+    }
+    &-item a{
+        color: #1B1C21;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    };
+    &-link {
+    
+    }
+    &-item .active-link{
+    
+    }
+}
+
+.header-aside {
+    margin: 0px 0px 50px 0px;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 16px 0px;
+    }
+    &__item {
+    }
+    &__item:first-child{
+        display: flex;
+    }
+    &__burger-close {
+        margin: 0px 16px 0px 0px;
+        align-self: center;
+    }
+    &__logo {
+    }
+    &__search {
+    }
+}
+.active-link{
+    position: relative;
+    & a{
+        color: #7E7E82;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: -24px;
+        top: 0;
+        width: 4px;
+        height: 40px;
+        background-image: url(../img/highlight.svg);
+    }
+}
+
+.aside__footer {
+}
+.footer-aside {
+    margin: 0px 24px 32px;
+    &__links {
+        margin: 0px 0px 12px 0px;
+    }
+    &__link {
+    }
+    &__link:not(:last-child){
+        margin: 0px 16px 0px 0px;
+    }
+    &__contacts {
+        margin: 0px 0px 40px 0px;
+    }
+    &__email {
+        margin: 0px 0px 12px 0px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+    &__mobile {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+    }
+    &__languages {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+    &__ru {
+    }
+    &__en {
+    }
+    &__ch {
+    }
+}
+ 
+.active-lang{
+    color: #7E7E82 !important;
+}
+
+@media(min-width:769px){
+    .aside{
+        box-shadow: none;
+    }
+}

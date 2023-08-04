@@ -1,0 +1,50 @@
+.footer {
+    &__container{
+        margin-bottom: 20px;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info-box{
+        &--last{
+            width: 330px;
+            text-align: end;
+        }
+    }
+}
+.footer__info-text {
+    color:$grey-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 114.286%;
+}
+
+@media (max-width: 1120px){
+    .footer__content{
+        margin: 0px 24px;
+    }
+}
+@media (max-width: 880px){
+    .footer__info-box--last{
+        max-width: 213px;
+    }
+}
+@media (max-width: 759px){
+    .prices-info__container {
+        margin-bottom: 57px;
+    }
+    .footer__content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__info-box--last{
+        text-align: center;
+        max-width:312px;
+    }
+    .footer__info-box:not(:last-child) {
+        margin: 0px 0px 16px 0px;
+    }
+}

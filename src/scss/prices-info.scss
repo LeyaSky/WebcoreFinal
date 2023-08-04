@@ -1,0 +1,52 @@
+.prices-info {
+    &__container{
+        margin-bottom: 83px;
+    }
+    &__info{
+        max-width: 421px;
+    }
+    &__main{
+        margin: 0px 0px 16px 0px;
+        font-size: 14px;
+        color:$black-text;
+        font-weight: 400;
+        line-height: 142.8%;
+        letter-spacing: 0.2px;
+    }
+}
+@media (max-width: 1120px){
+    .prices-info{
+        margin: 0px 24px;
+    }
+}
+@media(max-width:364px){
+    .link__text{
+        width: fit-content;
+    }
+}
+.prices-info__main {
+}
+.prices-info__link {
+    position: relative;
+    color: $black-text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+}
+.prices-info__link svg{
+    position: absolute;
+}
+.link {
+    &__text{
+        color: $black-text;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.2px;
+    }
+}
+.link__text {
+}
+.link__svg {
+}
