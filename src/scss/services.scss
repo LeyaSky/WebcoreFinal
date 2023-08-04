@@ -11,6 +11,7 @@
     }
     &__desktop-items{
         display: flex;
+        align-items: flex-start;
     
     }
     &__desktop-item{
@@ -39,13 +40,12 @@
         line-height: 40px;
         letter-spacing: -0.6px;
         margin: 0px 0px 24px 0px;
-        padding: 24px 0px 0px 16px;
     }
     &__header::before{
         content: '';
         position: absolute;
-        left: 0;
-        top:24px;
+        left: -50px;
+        top:0;
         width: 4px;
         height: 40px;
         background-image: url(/img/highlight.svg);
