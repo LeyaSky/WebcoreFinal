@@ -78,7 +78,7 @@
                     include: path.resolve(__dirname, 'src/js'),
                     use: {
                         loader: 'babel-loader',
-                        options: {
+                        options: {  
                           presets: ['@babel/preset-env'],
                         }
                     }

@@ -11,6 +11,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div id='header__hide-content' class="header__hide-content"></div>
             <div class="header__container">
                 <nav class="header__nav nav-header">
                     <div class="nav-header__section">
@@ -61,15 +62,15 @@
                             <div class="aside__header header-aside">
                                 <nav class="header-aside__nav">
                                     <div class="header-aside__item">
-                                        <a class="header-aside__burger-close">
-                                            <img src="img/burger-close.svg" alt="">
+                                        <a href='#' class="header-aside__burger-close">
+                                            <img id='burger-close-img'class='closeBtn' src="img/burger-close.svg" alt="">
                                         </a>
                                         <div class="header-aside__logo logo">
                                             <img src="img/logo.png" alt="logo">
                                         </div>
                                     </div>
                                     <div class="header-aside__item">
-                                        <a class="header-aside__search">
+                                        <a href='#' class="header-aside__search">
                                             <img src="img/search.svg" alt="">
                                         </a>
                                     </div>
@@ -137,7 +138,7 @@
                                 <div class="services__desktop-items">
                                     <div class="services__desktop-item">
                                         <div class="services__desktop-text">Оставить заявку</div>
-                                        <a href="aside.html" class="nav-header__repair">
+                                        <a href="#" class="nav-header__repair">
                                             <img src="../src/img/repair.svg" alt="repair">
                                         </a>
                                     </div>
@@ -812,8 +813,8 @@
                                             <div class="item__header">Срок</div>
                                             <div class="item__time">30 мин</div>
                                         </div>
-                                        <button class="item__button">
-                                            <div class="item__order-button">Заказать</div>
+                                        <button class="item__button ">
+                                            <div class="item__order-button ">Заказать</div>
                                             <div class="item__order-button--svg">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                     <rect width="24" height="24" rx="12" fill="#FF3E79"/>
@@ -1066,6 +1067,61 @@
                     </div>
                 </footer>
             </main>
+        </div> 
+        <div class="modal feedback">
+            <div class="modal__header feedback__header">Обратная связь</div>  
+            <div class="modal__main feedback__main"> 
+                <form class='modal__form feedback__form'action="index.html">
+                    <input type="text" id="name" name="user__name" placeholder="Имя">
+                    <input type="text" id="phone" name="user__phone" placeholder="Телефон">
+                    <input type="text" id="email" name="user__email" placeholder="Электронная почта">
+                    <textarea name="user__message" id="message" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                    <div class="modal__terms feedback__terms">
+                        Нажимая “отправить”, вы даете согласие на <span>обработку 
+                        персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span>
+                        <button class="modal__button button-modal">
+                            <div class="button-modal__box">
+                                <div class="button-modal__text">ОТПРАВИТЬ</div>
+                                <div class="button-modal__svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect width="24" height="24" rx="12" fill="#FF3E79"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 11.9999L9.79155 9.229C9.3641 8.83529 9.36112 8.16138 9.78509 7.76392L9.92029 7.63716C10.3032 7.27818 10.8985 7.27633 11.2836 7.63294L15.9381 11.9426C15.9715 11.9735 15.9715 12.0263 15.9381 12.0572L11.3467 16.3085C10.9261 16.698 10.2758 16.696 9.85755 16.3039C9.39446 15.8697 9.39771 15.1336 9.86462 14.7036L12.8 11.9999Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div> 
+            <a href="#" class="modal__closeBtn">
+                <img id="closeBtn" class='closeBtn' src="img/burger-close.svg" alt="">
+            </a>
+        </div>
+        <div class="modal call">
+            <div class="modal__header call__header">Заказать звонок</div>  
+            <div class="modal__main call__main"> 
+                <form class='modal__form call__form'action="index.html">
+                    <input type="text" id="phone" name="user__phone" placeholder="Телефон">
+                    <div class="modal__terms call__terms">
+                        Нажимая “отправить”, вы даете согласие на <span>обработку 
+                        персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span>
+                        <button class="modal__button button-modal">
+                            <div class="button-modal__box">
+                                <div class="button-modal__text">ОТПРАВИТЬ</div>
+                                <div class="button-modal__svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect width="24" height="24" rx="12" fill="#FF3E79"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8 11.9999L9.79155 9.229C9.3641 8.83529 9.36112 8.16138 9.78509 7.76392L9.92029 7.63716C10.3032 7.27818 10.8985 7.27633 11.2836 7.63294L15.9381 11.9426C15.9715 11.9735 15.9715 12.0263 15.9381 12.0572L11.3467 16.3085C10.9261 16.698 10.2758 16.696 9.85755 16.3039C9.39446 15.8697 9.39771 15.1336 9.86462 14.7036L12.8 11.9999Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div> 
+            <a href="#" class="modal__closeBtn">
+                <img id="closeBtn-callModal" class='closeBtn' src="img/burger-close.svg" alt="">
+            </a>
         </div>
     </div>
 </body>

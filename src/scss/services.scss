@@ -107,6 +107,7 @@
 
 .header-main{
     padding-top: 24px;
+    margin-left: 24px ;
 }
 
 .menu-services {
@@ -226,6 +227,6 @@
 @media(max-width:1439px){
     .services__header::before {
         top:24px;
-        left:-20px;
+        left:-24px;
     }
 }

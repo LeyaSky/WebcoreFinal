@@ -1,0 +1,139 @@
+.modal {
+    position: relative;
+    padding: 40px 32px;
+    width: 440px;
+    height: 100%;
+    position: absolute;
+    right:-1000px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease 0s;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    &__main{
+        display: flex;
+        flex-direction: column;
+    }
+    &__form{
+        input,textarea{
+            display: block;
+            width: 376px;
+            border-radius: 8px;
+            border: 1px solid #EAEAEA;
+            background: #FFF;
+        }
+        input{
+            height: 48px;
+            margin-bottom: 16px;
+        }
+        textarea{
+            height: 118px;
+            margin-bottom: 16px;
+        }
+    }
+    &__terms{
+        position: relative;
+        color: $grey-text;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; 
+        margin-bottom: 23px;
+        span{
+            color: $red-text;
+        }
+    }
+    &__header{
+        color: $black-text;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 133.333%;
+        letter-spacing: -0.6px;
+        margin-bottom: 24px;
+    }
+}
+::placeholder{
+    color: $grey-text;
+    font-size: 16px;
+    padding:12px 16px;
+}
+.modal__header::before{
+    content: '';
+            position: absolute;
+            left: 0px;
+            top: 33px;
+            width: 4px;
+            height: 40px;
+            background-image: url(../img/highlight.svg);
+}
+.modal-openedModal{
+    right:0 !important;
+    top:0;
+    z-index: 200;
+}
+.modal__closeBtn{
+    position: absolute;
+    top:32px;
+    left:-65px;
+}
+.button-modal{
+    &__box{
+        position: absolute;
+        bottom: -46px;
+        right: 0px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 8px 4px 12px;
+        width: 119px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background-color: #FF3E79;
+    }
+    &__text{
+        font-size: 12px;
+        background: none;
+        color: #FFF;
+        font-weight: 700;
+    }
+    &__svg{
+        position: absolute;
+        right:0;
+        top:3px;
+    }
+}
+
+@media (max-width: 767.98px){
+    .modal {
+        width: 100%;
+        padding: 104px 32px;
+    }
+    .modal__closeBtn {
+        position: absolute;
+        top: 24px;
+        left: 32px;
+    }
+    .modal__header::before{
+        top:98px;
+    }
+}
+@media(max-width:435px){
+    .modal__form input, 
+    .modal__form textarea{
+        width: 340px;
+        margin: 0px auto 16px auto;
+    }
+    .modal {
+        width: 100%;
+        padding: 104px 16px;
+    }
+}
+@media(max-width:378px){
+    .modal__form input, 
+    .modal__form textarea{
+        width: 288px;
+    }
+}

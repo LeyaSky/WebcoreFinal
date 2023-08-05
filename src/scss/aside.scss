@@ -1,9 +1,11 @@
 
-.aside{
+.aside{ 
     min-width:300px;
     width: 320px;
+    height:100vh;
     flex-wrap: nowrap;
     background-color: #FFF;
+    transition: all 0.5s ease 0s;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     &__wrapper{
         display: flex;
@@ -41,7 +43,6 @@
     &-main{
         flex-wrap: wrap;
         display: flex;
-        max-width: 1440px;
         margin: 0 auto;
     }
 }
@@ -62,6 +63,7 @@
     &__burger-close {
         margin: 0px 16px 0px 0px;
         align-self: center;
+        z-index: 120;
     }
     &__logo {
     }
@@ -131,22 +133,33 @@
 .active-lang{
     color: #7E7E82 !important;
 }
-
-@media(min-width:769px){
-    .aside{
-        box-shadow: none;
-    }
+//////   OPENED BURGER  ///////
+.aside-openedBurger{
+    top:0 !important;
+    left:0 !important;
 }
+
+// @media(min-width:769px){
+//     .aside{
+//         box-shadow: none;
+//     }
+// }
 
 @media(max-width:1439px){
     .aside{
         position: absolute;
-        top:-1000px;
+        z-index: 100;
         left: -1000px;
     }
 }
 @media(min-width:1439px){
     .header-aside__burger-close {
         display: none;
+    }
+}
+
+@media(max-width:767.98px){
+    .aside{
+        width: 100%;
     }
 }

@@ -14,6 +14,7 @@ body{
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.2px;
+    overflow-x: hidden;
 }
 
 [class*="__container"]{
@@ -25,9 +26,19 @@ body{
 }
 main{
     flex: 1 1 auto;
-    padding-left: 36px;
+}
+// burger opened options
+
+.lock-content{
+    overflow: hidden;
 }
 
 main,footer{
     background: #F8F8F8;;
+}
+
+@media(min-width:1439px){
+    main{
+        padding-left: 36px;
+    }
 }

@@ -14,7 +14,14 @@ $bg-color: #F8F8F8;
     }
 
 }
-
+.header__hide-content{
+    width: 100%;
+    visibility: hidden;
+    z-index: 2;
+    position: absolute;
+    height:100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+}
 .services__main-content{
 
 }
