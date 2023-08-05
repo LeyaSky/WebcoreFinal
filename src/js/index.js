@@ -16,4 +16,4 @@ import 'swiper/css/pagination';
 
 import'./modules/show-hide-btns.js';
 import'./modules/swipers.js';
-
+import './modules/wrapper-resize.js';

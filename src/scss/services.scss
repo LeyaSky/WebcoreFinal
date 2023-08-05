@@ -1,5 +1,6 @@
 
 .services {
+    position: relative;
     &__container {
         padding: 0px 0px 50px 0px;
         border-bottom: 1px solid #D9FFF5;
@@ -44,7 +45,7 @@
     &__header::before{
         content: '';
         position: absolute;
-        left: -50px;
+        left: -36px;
         top:0;
         width: 4px;
         height: 40px;
@@ -104,6 +105,9 @@
     
 }
 
+.header-main{
+    padding-top: 24px;
+}
 
 .menu-services {
     padding: 0px 0px 0px 16px;
@@ -193,9 +197,6 @@
         &__main-content:last-child {
             margin: 0;
         }
-        &__desktop-content{
-            display: flex;
-        }
     }
     .menu-services{
         display: flex;
@@ -208,11 +209,23 @@
             display: none;
         }
     }
+
+}
+
+@media(min-width:1439px){
     .header{
         display: none;
         &-main{
             display: none;
         }
     }
-
+    .services__desktop-content {
+        display: flex;
+    }
+}
+@media(max-width:1439px){
+    .services__header::before {
+        top:24px;
+        left:-20px;
+    }
 }
