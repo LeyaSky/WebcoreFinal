@@ -71,7 +71,7 @@
         top:0px;
         left: 0;
         background-image: url(/img/read-more.svg);
-        z-index:50;
+        z-index:1;
     }
     &__text--laptop-text,
     &__text--desktop-text{
@@ -214,11 +214,17 @@
 }
 
 @media(min-width:1439px){
-    .header{
+    // .header{
+    //     display: none;
+    //     &-main{
+    //         display: none;
+    //     }
+    // }
+    .header__container{
         display: none;
-        &-main{
-            display: none;
-        }
+    }
+    .header-main{
+        display:none;
     }
     .services__desktop-content {
         display: flex;

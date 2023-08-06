@@ -2,7 +2,7 @@
 .aside{ 
     min-width:300px;
     width: 320px;
-    height:100vh;
+    // height:100vh;
     flex-wrap: nowrap;
     background-color: #FFF;
     transition: all 0.5s ease 0s;
@@ -44,6 +44,9 @@
         flex-wrap: wrap;
         display: flex;
         margin: 0 auto;
+    }
+    &__container{
+        border-bottom: none !important;
     }
 }
 
@@ -162,4 +165,9 @@
     .aside{
         width: 100%;
     }
+}
+
+.aside__blured{
+    z-index: 1 !important;
+    transition: all 0.5s ease 0s;
 }
