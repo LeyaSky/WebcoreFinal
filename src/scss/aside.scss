@@ -1,12 +1,16 @@
-
-.aside{ 
+.services__container{
+    position: relative;
+}
+.aside{
+    height:100vh;
+    position: absolute;
+    left: -357px;
     min-width:300px;
     width: 320px;
     // height:100vh;
     flex-wrap: nowrap;
     background-color: #FFF;
     transition: all 0.5s ease 0s;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     &__wrapper{
         display: flex;
         flex-direction: column;
@@ -150,9 +154,11 @@
 
 @media(max-width:1439px){
     .aside{
-        position: absolute;
+        height:100vh;
+        position: fixed;
         z-index: 100;
         left: -1000px;
+        box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     }
 }
 @media(min-width:1439px){

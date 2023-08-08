@@ -35,3 +35,13 @@ export function unBlurMainContent(){
     const bluredBckg = document.querySelector('.header__hide-content');
     bluredBckg.style.visibility = 'hidden';
 }
+
+export function AsideHeight(){
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log(document.body.scrollHeight);
+        const height = document.body.scrollHeight;
+        const aside = document.querySelector('.aside');
+        aside.style.height = `${height}px `;
+    })
+};
+AsideHeight();
