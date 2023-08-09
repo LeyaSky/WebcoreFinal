@@ -144,6 +144,7 @@
 .aside-openedBurger{
     top:0 !important;
     left:0 !important;
+    height:100% !important;
 }
 
 // @media(min-width:769px){
@@ -175,5 +176,5 @@
 
 .aside__blured{
     z-index: 1 !important;
-    transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s
 }

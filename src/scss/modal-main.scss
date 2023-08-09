@@ -1,14 +1,18 @@
 .modal {
+    // display: none !important;
+    opacity: 0;
+    visibility: hidden;
     position: relative;
     padding: 40px 32px;
     width: 440px;
     height: 100%;
     position: absolute;
-    right:10000px;
+    right: 0;
+    // right: -10000px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease-in-out 0s;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     &__main{
         display: flex;
@@ -68,9 +72,10 @@
             background-image: url(../img/highlight.svg);
 }
 .modal-openedModal{
-    right:0 !important;
+    opacity: 1;
     top:0;
     z-index: 200;
+    visibility: visible;
 }
 .modal__closeBtn{
     position: absolute;

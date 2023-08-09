@@ -17,10 +17,16 @@ $bg-color: #F8F8F8;
 .header__hide-content{
     width: 100%;
     visibility: hidden;
+    opacity: 0;
     z-index: 2;
     position: absolute;
     height:100vh;
     background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease-in-out 0s;
+}
+.visible{
+    visibility: visible;
+    opacity: 1;
 }
 .services__main-content{
 

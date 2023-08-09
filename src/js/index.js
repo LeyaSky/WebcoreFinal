@@ -14,5 +14,4 @@ import'./modules/swipers.js';
 import './modules/burgerOpenClose.js';
 import './modules/preventDefault.js';
 import './modules/modal.js';
-import './modules/showMoreBtns.js';
 

@@ -76,9 +76,11 @@
         height: 160px;
         min-width: 0;
         margin: 0px 32px 16px 0px; /**/
+        transition: all 0.5s ease 0s;
 
         .hidden > &:not(:nth-child(-n + 4)){
-            display: none;
+            visibility: hidden;
+            opacity: 0;
         }
         
         &--body {

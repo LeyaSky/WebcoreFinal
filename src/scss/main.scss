@@ -7,7 +7,7 @@
     background-color:#F8F8F8;
 }
 body{
-    // height: 100%;
+    height: 100%;
     // max-width: none;
     font-size: 20px;
     font-family: TT Lakes;
@@ -31,7 +31,7 @@ main{
 // burger opened options
 
 .lock-content{
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 main,footer{
