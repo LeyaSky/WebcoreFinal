@@ -76,17 +76,21 @@
         height: 160px;
         min-width: 0;
         margin: 0px 32px 16px 0px; /**/
-        transition: all 0.5s ease 0s;
+        opacity: 1;
+        opacity: 1;
+        animation: fadeIn 0.2s ease-in-out;
+        animation-fill-mode: forwards;
 
         .hidden > &:not(:nth-child(-n + 4)){
             display: none;
+            opacity: 0;
+            animation: fadeOut 0.5s ease-in-out;
         }
         
         &--body {
             display: flex;
             justify-content: space-between;
             margin: 0px 16px 0px 16px;
-            // position: relative;  ////////////////////////////////////
         }
     }
     &__button{
@@ -140,7 +144,6 @@
         letter-spacing: -0.2px;
     }
 }
-
 .main-types #types-pagination{
     position: static !important;
 }
@@ -224,3 +227,27 @@
 .main-types__item .swiper-slide{
     height: 160px !important;
 }
+
+
+//82
+
+@keyframes fadeIn {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+

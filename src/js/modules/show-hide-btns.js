@@ -42,6 +42,9 @@ export function showHideContent (){
         // hideBtn.classList.add('hiddenBtn');
         typesShowBtn.style.display = 'block';
         typesHideBtn.style.display = 'none';
+        // window.setTimeout(function() {
+        //     typesBox.classList.add('hidden');
+        //   }, 500);
     });
 };
 showHideContent();
