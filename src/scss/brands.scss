@@ -72,8 +72,7 @@
         transition: all 0.5s ease 0s;
 
         .hidden > &:not(:nth-child(-n + 8)){
-            visibility: hidden;
-            opacity: 0;
+            display: none;
         }
         
         &--body {
