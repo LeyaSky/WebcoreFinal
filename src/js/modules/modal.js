@@ -48,7 +48,9 @@ closeModal();
 export function openActionFeedbackMobile(){
     const modalFeedback = document.querySelector('.feedback');
     modalFeedback.classList.add('modal-openedModal');
-    document.querySelector('.header__hide-content').style.zIndex = '200';
+    // document.querySelector('.header__hide-content').style.zIndex = '200';
+    const aside = document.querySelector('.aside');
+    aside.classList.remove('aside-openedBurger');
     blurMainContent();
 }
 
@@ -56,6 +58,8 @@ export function openActionCallFeedback(){
     const modalCall = document.querySelector('.call');
     modalCall.classList.add('modal-openedModal');
     document.querySelector('.header__hide-content').style.zIndex = '200';
+    const aside = document.querySelector('.aside');
+    aside.classList.remove('aside-openedBurger');
     blurMainContent();
 }
 
